@@ -15,7 +15,6 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<!-- The script and the div for admin bar. -->
 <?php wp_body_open(); ?>
 <!-- Here the site -->
 <div id="page-container">

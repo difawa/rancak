@@ -1,6 +1,6 @@
 <?php
 /**
- * The footer template for this theme.
+ * The footer template.
  * 
  * @package Rancak
  */

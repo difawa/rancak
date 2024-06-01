@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for this theme.
+ * The header template.
  * 
  * @package Rancak
  */

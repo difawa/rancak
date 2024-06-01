@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-    <header class="row w-100">
+    <header class="row w-100 align-items-center">
         <div class="site-branding-text col-lg-3">
             <?php if (is_front_page() || is_home()) { ?>
             <h1 class="site-title">

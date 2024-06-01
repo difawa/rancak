@@ -14,3 +14,32 @@
  * Text Domain: rancak
  */
  
+*, *::before, *::after {box-sizing: border-box}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+/* Layout */
+#page{margin: 0 auto;}
+.w-100{width: 100%}
+.row{display: flex}
+.col-lg-2{width: 16.666%}
+.col-lg-3{width: 25%}
+.col-lg-7{width: 58.333%}
+.mx-auto{margin-left: auto; margin-right: auto}
+.align-items-center{align-items: center;}
+
+@media (min-width: 1200px) {
+    #page {max-width: 1320px;}
+}
+/* Position */
+.relative{position: relative}
+.absolute{position: absolute}
+/* Header Menu */
+#menu-header{padding: 0; margin: 0; justify-content: center;}
+#menu-header *{list-style: none;}
+#menu-header .menu-item{background: darkgreen; padding:10px;}
+#menu-header .sub-menu{display: none; position: absolute;}
+#menu-header > li:not(:last-child){border-right: 1px solid #fff;}
+#menu-header li:hover > ul {display: block;}
+#menu-header a{color: #fff; text-decoration: none;}

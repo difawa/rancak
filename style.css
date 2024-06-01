@@ -14,11 +14,3 @@
  * Text Domain: rancak
  */
  
-body{
-    font-size: 16px;
-    font-weight: 400;
-}
-
-header{
-    display: flex;
-}

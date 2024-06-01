@@ -20,11 +20,18 @@ function rancak_scripts() {
     /**
      * The function manages the stylesheets and scripts.
      */
-     wp_register_style('rancak-stylesheet', get_stylesheet_uri(), [], filemtime( get_template_directory() . '/style.css' ));
-     wp_register_script('main-js', get_template_directory_uri() . '/assets/js/main.js', [], filemtime(get_template_directory().'/assets/js/main.js') );
 
-     wp_enqueue_style('rancak-stylesheet');
-     wp_enqueue_script('main-js');
+    //  Registering stylesheets    
+    wp_register_style('rancak-style', get_stylesheet_uri(), [], filemtime( get_template_directory() . '/style.css' ));
+    wp_register_style('layout-style', get_template_directory_uri().'/assets/css/layout.css', [], filemtime( get_template_directory() . '/assets/css/layout.css' ));
+
+    // Registering scripts
+    wp_register_script('main-js', get_template_directory_uri() . '/assets/js/main.js', [], filemtime(get_template_directory().'/assets/js/main.js') );
+    
+    // Enqueue
+    wp_enqueue_style('rancak-style');
+    wp_enqueue_style('layout-style');
+    wp_enqueue_script('main-js');
 }
 
 add_action('wp_enqueue_scripts', 'rancak_scripts');

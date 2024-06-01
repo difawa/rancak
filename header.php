@@ -16,11 +16,9 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<!-- Here the site -->
-<div id="page-container">
-    <!-- The header section -->
-    <header>
-        <div class="site-branding-text">
+<div id="page" class="site">
+    <header class="row w-100">
+        <div class="site-branding-text col-lg-3">
             <?php if (is_front_page() || is_home()) { ?>
             <h1 class="site-title">
                 <a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home"><?php echo esc_html(get_bloginfo('name')); ?></a>
@@ -37,15 +35,7 @@
             </p>
         </div>
 
-        <nav id="navbar-top">
-        <?php $menu_args = array(
-            'rancak' => 'primary-menu', // Lokasi tema dari menu yang ingin ditampilkan
-            'container' => 'nav', // Jenis container HTML yang ingin digunakan
-            'container_class' => 'main-menu', // Kelas CSS untuk container
-            'menu_class' => 'menu', // Kelas CSS untuk menu
-            'fallback_cb' => false // Mengabaikan callback jika menu tidak ada
-        ); wp_nav_menu($menu_args); ?>
-        </nav>
-
         <?php get_template_part('template-parts/nav'); ?>
+
+        <div class="header-tool col-lg-2"></div>
     </header>

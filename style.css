@@ -1,0 +1,24 @@
+/*
+ * Theme Name: Rancak
+ * Theme URI: https://difamtk.com
+ * Author: Difa Winanda Adliya
+ * Author URI: https://difamtk.com
+ * Description: A blog theme that is simple and clean, good for education blog.
+ * Version:           1.0.0
+ * Tags: blog, theme, mathematics
+ * Tested up to: 6.5
+ * Requires at least: 6.1
+ * Requires PHP: 8.1
+ * License: GNU General Public License v2.0 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: rancak
+ */
+ 
+body{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header{
+    display: flex;
+}

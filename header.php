@@ -46,4 +46,6 @@
             'fallback_cb' => false // Mengabaikan callback jika menu tidak ada
         ); wp_nav_menu($menu_args); ?>
         </nav>
+
+        <?php get_template_part('template-parts/nav'); ?>
     </header>

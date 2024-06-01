@@ -21,7 +21,7 @@ function rancak_scripts() {
      * The function manages the stylesheets and scripts.
      */
      wp_register_style('rancak-stylesheet', get_stylesheet_uri(), [], filemtime( get_template_directory() . '/style.css' ));
-     wp_register_script('main-js', get_template_directory_uri() . '/assets/main.js', [], filemtime(get_template_directory().'/assets/main.js') );
+     wp_register_script('main-js', get_template_directory_uri() . '/assets/js/main.js', [], filemtime(get_template_directory().'/assets/js/main.js') );
 
      wp_enqueue_style('rancak-stylesheet');
      wp_enqueue_script('main-js');

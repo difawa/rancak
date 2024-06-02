@@ -28,7 +28,7 @@
                 <a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home"><?php echo esc_html(get_bloginfo('name')); ?></a>
             </p>
             <?php } ?>
-            <p class="site-description">
+            <p class="site-description my-0">
                 <?php
                 echo esc_html(get_bloginfo('description'));
                 ?>

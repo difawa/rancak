@@ -24,18 +24,24 @@ body{
 #page{margin: 0 auto;}
 .w-100{width: 100%}
 .row{display: flex}
-.col-lg-2{width: 16.666%}
-.col-lg-3{width: 25%}
-.col-lg-7{width: 58.333%}
 .mx-auto{margin-left: auto; margin-right: auto}
+.my-0{margin-top: 0; margin-bottom: 0;}
 .align-items-center{align-items: center;}
 
+
+@media (min-width: 992px) {
+    .col-lg-2{width: 16.666%}
+    .col-lg-3{width: 25%}
+    .col-lg-7{width: 58.333%}
+}
 @media (min-width: 1200px) {
     #page {max-width: 1320px;}
 }
+
 /* Position */
 .relative{position: relative}
 .absolute{position: absolute}
+
 /* Header Menu */
 #menu-header{padding: 0; margin: 0 auto; width: fit-content; }
 #menu-header *{list-style: none; padding:0}
@@ -46,6 +52,21 @@ body{
 #menu-header > li:last-child{border-radius: 0 4px 4px 0;}
 #menu-header li:hover > ul {display: block;}
 .sub-menu {margin-top: 10px;}
-.sub-menu li{border-top: 1px solid green;}
+.sub-menu li{border-top: 1px solid green; border-right: 1px solid green;}
 .sub-menu > li > .sub-menu{left: 100%; top:0px;}
 #menu-header a{color: #fff; text-decoration: none;}
+
+
+/* Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+}
+
+
+/* Blocks */
+p {margin-top: 0;margin-bottom: 1rem;}
+.site-title a{color: #000; text-decoration: none; font-weight: 700; font-size: 40px;}
+.site-title{margin-top: 0; margin-bottom: 20px;}
+header{margin: 30px 0; }

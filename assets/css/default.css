@@ -1,0 +1,9 @@
+:root{
+    --first-color: #12372A;
+    --second-color: #436850;
+}
+
+.header-tools a{
+    background: linear-gradient(90deg, var(--first-color) 0%, var(--second-color) 100%);
+	color: #fff;
+}

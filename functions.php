@@ -35,3 +35,5 @@ function rancak_setup() {
 }
 add_action('after_setup_theme','rancak_setup');
 
+require_once(get_template_directory().'/inc/customizer.php');
+

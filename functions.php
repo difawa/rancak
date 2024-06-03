@@ -26,7 +26,8 @@ function rancak_scripts() {
 add_action('wp_enqueue_scripts', 'rancak_scripts');
 
 function rancak_setup() {
-    add_theme_support( 'title-tag' );
+    add_theme_support( 'title-tag' ); // <title> </title>
+    add_theme_support( 'custom-logo'); // custom logo in customizer for site title
     register_nav_menus( array(
 		'header-menu' => __('Header menu'),
         'footer-menu' => __('Footer menu'),

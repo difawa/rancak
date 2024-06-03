@@ -35,7 +35,7 @@
             </p>
         </div>
 
-        <?php get_template_part('template-parts/nav'); ?>
+        <?php get_template_part('template-parts/header/nav'); ?>
 
         <div class="header-tool col-lg-2"></div>
     </header>

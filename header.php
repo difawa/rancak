@@ -37,5 +37,11 @@
 
         <?php get_template_part('template-parts/header/nav'); ?>
 
-        <div class="header-tool col-lg-2"></div>
+        <div class="header-tool col-lg-2">
+            <?php if (get_theme_mod('subscribe_button')) {  ?>
+            <a class="subscribe-btn" href=" <?php echo get_theme_mod('subscribe_link') ?> " target="_blank">
+                ini ikon <i class="fas fa-bell"></i>
+            </a>
+            <?php } ?>
+        </div>
     </header>

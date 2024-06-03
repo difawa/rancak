@@ -6,29 +6,40 @@
  */
 
  function theme_customizer_function($wp_customize){
-    $wp_customize->add_panel('header_option_panel', array(
-        'title' => 'Header Options',
-        'priority' => 30,
-        'capability' => 'edit_theme_options',
+    $wp_customize->add_section('rancak-header-tools', array(
+        'title' => 'Header Tools Options',
+        'priority' => 30
     ));
 
-    //Menu Settings
-    $wp_customize->add_section('menu_options', array(
-        'title' => 'Menu',
-        'capability' => 'edit_theme_options',
-        'panel' => 'header_option_panel',
-        'priority' => 10,
+    // Hide or show subscribe button
+    $wp_customize->add_setting('subscribe_button', array(
+        'type' => 'theme_mod',
+        'default' => true,
+        'sanitize_callback' => 'sanitize_checkbox'
     ));
 
-    $wp_customize->add_setting('menu_settings', array(
-        'capability' => 'edit_theme_options',
-        'priority' => 1,
+    $wp_customize->add_control('subscribe_button', array(
+        'label' => 'Hide / Show Subcribe Button',
+        'type' => 'checkbox',
+        'section' => 'rancak-header-tools',
     ));
-    $wp_customize->add_control('menu_settings', array(
-        'type' => 'hidden',
-        'label' => 'Menu',
-        'section' => 'menu_options',
-    ));
- }
 
- add_action('customize_register', 'theme_customizer_function');
+    // Subscribe link
+    $wp_customize->add_setting('subscribe_link', array(
+        'type' => 'theme_mod',
+        'default' => '#',
+        'sanitize_callback' => 'esc_url'
+    ));
+    $wp_customize->add_control('subscribe_link', array(
+        'title' => 'Subscribe Link',
+        'section' => 'rancak-header-tools',
+        'type' => 'url',
+        'label' => 'Subscribe Link',
+    ));
+}
+
+add_action('customize_register', 'theme_customizer_function');
+
+function sanitize_checkbox( $checked ) {
+    return ( ( isset( $checked ) && true === $checked ) ? true : false );
+}

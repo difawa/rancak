@@ -9,7 +9,7 @@
 
  ?>
 
-<main>
+<main class="container">
    Ini content
 </main>
 

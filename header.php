@@ -17,7 +17,14 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-    <header class="row w-100 align-items-center">
+    <header class="container flex-row align-items-center">
+        <div class="ham-option me-auto d-lg-none">
+            <div class="ham-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <div class="site-branding-text col-lg-3">
             <?php if (is_front_page() || is_home()) { ?>
             <h1 class="site-title">
@@ -37,7 +44,7 @@
 
         <?php get_template_part('template-parts/header/nav'); ?>
 
-        <div class="header-tools col-lg-2 row">
+        <div class="header-tools col-lg-2 flex-row justify-content-end ms-auto">
             <a href="#" class="search-btn">
             <svg width="16" height="16" fill="none" viewBox="1 1 23 23">
                 <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>

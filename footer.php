@@ -6,7 +6,7 @@
  */
 ?>
 
-<footer>
+<footer class="container-fluid">
     Ini footer
 </footer>
 

@@ -11,15 +11,26 @@
         'priority' => 30
     ));
 
+    // Hide or show search button
+    $wp_customize->add_setting('search_button', array(
+        'type' => 'theme_mod',
+        'default' => true,
+        'sanitize_callback' => 'sanitize_checkbox'
+    ));
+    $wp_customize->add_control('search_button', array(
+        'label' => 'Hide/Show Search Button',
+        'type' => 'checkbox',
+        'section' => 'rancak-header-tools',
+    ));
+
     // Hide or show subscribe button
     $wp_customize->add_setting('subscribe_button', array(
         'type' => 'theme_mod',
         'default' => true,
         'sanitize_callback' => 'sanitize_checkbox'
     ));
-
     $wp_customize->add_control('subscribe_button', array(
-        'label' => 'Hide / Show Subcribe Button',
+        'label' => 'Hide/Show Subcribe Button',
         'type' => 'checkbox',
         'section' => 'rancak-header-tools',
     ));

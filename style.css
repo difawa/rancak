@@ -42,18 +42,18 @@ body{
 .me-auto {margin-right:auto!important}
 
 /* Header Menu */
-#menu-header{padding: 0; margin: 0 auto; width: fit-content; }
-#menu-header *{list-style: none; padding:0}
-#menu-header .menu-item{background: darkgreen; padding:10px;}
-#menu-header .sub-menu{display: none; position: absolute;}
-#menu-header > li:not(:last-child){border-right: 1px solid green;}
-#menu-header > li:first-child{border-radius: 4px 0 0 4px;}
-#menu-header > li:last-child{border-radius: 0 4px 4px 0;}
-#menu-header li:hover > ul {display: block;}
+.navbar{padding: 0; margin: 0 auto; width: fit-content; }
+.navbar *{list-style: none; padding:0}
+.navbar .menu-item{background: darkgreen; padding:10px;}
+.navbar .sub-menu{display: none; position: absolute;}
+.navbar > li:not(:last-child){border-right: 1px solid green;}
+.navbar > li:first-child{border-radius: 4px 0 0 4px;}
+.navbar > li:last-child{border-radius: 0 4px 4px 0;}
+.navbar li:hover > ul {display: block;}
 .sub-menu {margin-top: 10px;}
 .sub-menu li{border-top: 1px solid green; border-right: 1px solid green;}
 .sub-menu > li > .sub-menu{left: 100%; top:0px;}
-#menu-header a{color: #fff; text-decoration: none;}
+.navbar a{color: #fff; text-decoration: none;}
 
 /* Header */
 .site-title a{color: #000; text-decoration: none; font-weight: 700; font-size: 40px;}

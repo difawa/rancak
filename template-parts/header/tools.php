@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="header-tools col-lg-2 flex-row justify-content-end ms-auto">
+<div class="header-tools col-lg-2 flex-row justify-content-end">
     <?php if (get_theme_mod('search_button', true)) { ?>
     <a href="#" class="search-btn">
     <svg width="16" height="16" fill="none" viewBox="1 1 23 23">

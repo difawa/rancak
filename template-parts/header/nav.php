@@ -129,7 +129,7 @@ add_filter( 'rancak_page_menu_args', 'rancak_page_menu_args' );
 wp_nav_menu( array(
     'theme_location' => 'header-menu',
     'container' => 'nav',
-    'container_class' => 'col-lg-7 d-lg-block none',
+    'container_class' => 'col-lg-7',
     'container_id' => 'top-nav',
     'menu_class' => 'flex-row position-relative',
     'fallback_cb'=> 'rancak_page_menu'

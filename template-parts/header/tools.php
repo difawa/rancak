@@ -28,7 +28,17 @@
 
 
 <?php function rancak_search_modal(){ ?>
-<div class="search-modal">
-    
+<div id="rancak-search-modal" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+        <?php get_search_form(); ?>
+        </div>
+    </div>
+    </div>
 </div>
+<div class="backdrop"></div>
 <?php } ?>

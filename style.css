@@ -39,9 +39,19 @@ body{
 	.ham-container{flex: 1}
 	.header-tools{flex: 2}
 }
+/* Phone */
 @media (max-width: 520px){
 	.header-tools{flex-direction: column; flex: 1}
 	.header-tools a{margin-left: auto;}
+}
+@media (max-width: 768px){
+	#top-nav ul{flex-direction: column; width: 100% !important;}
+	#top-nav > ul > li {border-radius: 0 !important; border-right: 0 !important; border-bottom: 1px solid #fff;}
+	#top-nav > ul li{background: linear-gradient(90deg, var(--first-color) 0%, var(--second-color) 100% )!important}
+	.sub-menu {margin-top: 10px; position: relative !important;}
+	.sub-menu li{border: 1px solid #fff !important;}
+	.sub-menu > li > .sub-menu{left: 0 !important}
+
 }
 
 
